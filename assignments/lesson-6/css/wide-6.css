@@ -1,0 +1,100 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+/* * is a wildcard referring to all elements. */
+@media only screen and (min-width: 768px) {
+*  { margin: 0; box-sizing: border-box; }
+body {
+    font-size: 24px;
+    line-height: 40px;
+    font-family: sans-serif;
+    color: black;
+    background-color: #EAF6FF;
+}
+nav {
+    font-size: 30px;
+    font: Segoe UI;
+    color: white;
+    background-color: #FFA400;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #FFA400;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+li {
+    float: left;
+}  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: rgb(252, 113, 0);
+}
+h1 {
+    font-size: 4.5rem;
+    padding: 1rem;
+    color: white;
+}
+h2 {
+    font-size: 2.0rem;
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: #2A2A72;
+    color: white;
+    position: absolute;
+    height: 50px;
+    left: 0px;
+    right: 0px;
+}
+.herodiv {
+    margin: 10px 420px; 
+    position: relative;
+    width: 960px;
+    height: 300px;
+}
+main image {
+    margin: 10px auto;
+    width: 700px;
+    height: auto;
+}
+.weathersummary {
+    position: absoulte;
+    top: 10px;
+    left: 10px;
+    background-color: #2A2A72;
+    font-size: 20px;
+    color: white;
+    padding: .5rem;
+    border: 1px solid black;
+}
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: 4.0rem;
+    max-width: auto;
+}
+header, footer, footer {
+    text-align: center;
+    background-color: #009FFD;
+    color: whitesmoke;
+}
+header img {
+    width: 100;
+    height: auto;
+    position: absolute;
+    right: 35px;
+    top: 48px;
+    z-index: 1
+}
+footer {
+    font-size: 1.5rem;
+}
+}
