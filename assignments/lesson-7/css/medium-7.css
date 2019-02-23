@@ -1,7 +1,7 @@
 /* CIT 230 - Assignment Portal CSS Template */
 /* You may use #HEX or color names */
 /* * is a wildcard referring to all elements. */
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 30em) {
     .navigation li:first-child { display: none;	}
       .navigation li { display: inline-block; margin-right: 1rem;}	
       .navigation li a { color: #FFF;}
