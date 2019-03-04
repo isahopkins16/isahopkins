@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>How About This Weather? | Preston, ID</title>
+  <meta name="description" content="Weather conditions and news for the town of Preston, Idaho.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small-8.css">
+  <link rel="stylesheet" href="css/wide-8.css">
+  <link rel="stylesheet" href="css/medium-8.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SegoeUI">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Georgia">
+
+</head>
+
+<body>
+
+  <header>
+      <img src="images/sunshine.jpg" alt="Sunshine Clipart">
+      <div>
+        <h1>How About This Weather?</h1>
+        <div class="motto">Everything you need to know.</div>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="#" title="Home">Home</a></li>
+        <li><a href="preston-8.html" title="Preston">Preston</a></li>
+        <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+        <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+        <li id="current-page"><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+        <li><a href="gallery-8.html" title="Gallery">Gallery</a></li>
+      </ul>
+    </nav>
+
+  <main>
+      <h2>Storm Center</h2>
+      <form action="thanks.html">
+          <h3>Contact Information</h3>
+          <label for="name">Full Name:</label>
+          <input id="name" type="text" name="name" minlength="5" size="20" required="" patter="A[A-Z][A-Za-z' -]+"><br>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required="" placeholder="johndoe95@website.com" size="20"><br>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="tel" required="" minlength="10" size="20"><br>
+          <h3>Storm Information</h3>
+          <label for="zip">Zip Code:</label>
+          <input type="number" id="zip" name="zip" required="" minlength="5" size="1"><br>
+          <label for="date">Date of Storm:</label>
+          <input type="date" id="date" name="date" minlength="5" size="5"><br>
+          <label for="type">Storm Type:</label>
+          <input list="stormtype" id="type" name="type">
+            <datalist id="stormtype">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+            </datalist><br>
+          <label for="region">Region:</label>
+          <select id="region">
+              <option selected="" disabled="">Select Region...</option>
+              <option value="preston">Preston</option>
+              <option value="sodasprings">Soda Springs</option>
+              <option value="fishhaven">Fish Haven</option>
+          </select><br>
+          <div class="severitydiv">
+              <label for="rating">Storm Severity (1-10):</label>
+              <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+              <span id="ratingvalue">5</span>
+          </div><br>
+          <div>
+              <label for="danger">Are you in danger?</label><br>
+          </div>
+          <div class="radio">
+              <div class="radiobutton">
+                  <label for="yes">Yes</label>
+                  <input id="yes" type="radio" name="danger" value="yes">
+              </div>
+              <div class="radiobutton">
+                 <label for="no">No</label>
+                 <input id="no" type="radio" name="danger" value="no">
+              </div>
+              <div class="radiobutton">
+                  <label for="maybe">Maybe</label>
+                  <input id="maybe" type="radio" name="danger" value="maybe">
+              </div>
+          </div>
+              <div class="comments">
+                  <label for="addcomments">Additional Comments:</label>
+                  <textarea name="message"></textarea>
+              </div><br>
+              <input type="submit" value="Submit Report">
+        </form>
+
+
+  </main>
+
+  <footer>
+      <p>&copy; 2019 - How About This Weather - Location: Idaho</p>
+      <span id="currentDate"></span>
+    </footer>
+  
+    <script src="js/hamburger.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/stormseverity.js"></script>
+  
+  </body>
+  
+  </html>
