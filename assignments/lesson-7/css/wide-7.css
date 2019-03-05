@@ -2,16 +2,9 @@
     .navigation li:first-child { display: none;	}
       .navigation li { display: inline-block; margin-right: 1rem;}	
       .navigation li a { color: #FFF;}
-}
 
-.fivedayforecast img {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    position: relative; 
-    width: 40%; 
-    padding: 50px; 
-    margin: auto;
+.fivedayforecast {
+    display: block; 
 }
 
 .articleimg {
@@ -71,3 +64,5 @@ figure img {
 }
   
 figure:hover {box-shadow: 0 0 50px #333;}
+
+}

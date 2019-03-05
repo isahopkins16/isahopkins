@@ -5,7 +5,16 @@
   .navigation li:first-child { display: none;	}
     .navigation li { display: inline-block; margin-right: 1rem;}	
     .navigation li a { color: #FFF;}
+    .fivedayforecast{ display: block;}
+    
+.articleimg {
+  height: 20rem;
+  margin: 1rem;
+  float: right;
+  padding-right: 0px;
+  box-shadow: 1rem 1rem .5rem #044389;
 }
+
 .fivedayforecast img {
   display: flex;
   flex-flow: row wrap;
@@ -21,7 +30,6 @@
   padding-right: 0px;
   box-shadow: 1rem 1rem .5rem #044389;
 }
-
 article {
 background-color: rgb(247, 215, 155);
 width: 70%;
@@ -36,6 +44,7 @@ margin-bottom: 30px;
 display: flex;
 flex-flow: row wrap;
 justify-content: space-around;
+margin: 0 auto;
 color: #FFF;
 background-color: rgb(42, 42, 114);
 font-size: 1rem;
@@ -51,18 +60,12 @@ height: auto;
 }
 
 .gallery {
-display: grid;
-grid-template:
-  [row1-start] "figure figure" auto [row1-end]
-  [row2-start] "figure figure" auto [row2-end]
-  [row3-start] "figure figure" auto [row3-end];
-}
-
-.gallery figure {
-justify-self: center;
-}
-
-figure img {
-width: 95%;
-height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+  
+  .gallery figure {
+  justify-self: center;
+  }
+  
 }

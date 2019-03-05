@@ -1,4 +1,4 @@
-*  { margin: 0; box-sizing: border-box; }
+*  { margin: 0; box-sizing: border-box;}
 
 body {
     font-family: 'Segoe UI', serif;
@@ -78,7 +78,7 @@ h2 {
 }
 
 h3 {
-    text-align: center; 
+    text-align: left; 
 }
 
 h4 {
@@ -109,7 +109,7 @@ h4 {
     border: 1px solid black;
 }
 
-.fivedayforecast img {
+.fivedayforecast {
     display: none; 
 }
 
@@ -220,7 +220,7 @@ header {
 .gallery {
     margin-bottom: 2rem;
     display: grid;
-    grid-template: [row1-start] "figure" auto [row1-end];
+    grid-template-columns: 1fr;
     grid-row-gap: 2rem;
 }
   
@@ -230,5 +230,5 @@ header {
   
 figure img {
   width: 95%;
-  height: 80%
+  height: 350px;
 }
