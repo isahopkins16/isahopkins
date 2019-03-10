@@ -1,0 +1,79 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+/* * is a wildcard referring to all elements. */
+@media only screen and (min-width: 30em) {
+  .navigation li:first-child { display: none;	}
+    .navigation li { display: inline-block; margin-right: 1rem;}	
+    .navigation li a { color: #FFF;}
+    .fivedayforecast{ display: block;}
+    
+.articleimg {
+  height: 20rem;
+  margin: 1rem;
+  float: right;
+  padding-right: 0px;
+  box-shadow: 1rem 1rem .5rem #044389;
+}
+
+.fivedayforecast img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 40%; 
+  padding: 50px; 
+  margin: auto; 
+}
+.articleimg {
+  height: 20rem;
+  margin: 1rem;
+  float: right;
+  padding-right: 0px;
+  box-shadow: 1rem 1rem .5rem #044389;
+}
+article {
+background-color: rgb(247, 215, 155);
+width: 70%;
+padding: 1rem;
+margin: auto;
+text-align: left !important;
+border: solid #FFA400 1px;
+margin-bottom: 30px; 
+}
+
+.contact {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+margin: 0 auto;
+color: #FFF;
+background-color: rgb(42, 42, 114);
+font-size: 1rem;
+line-height: 1.5rem;
+font-family: 'Segoe UI', sans-serif;
+width: 70%;
+padding: 2rem;
+}
+
+.map {
+width: 50%;
+height: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+  
+  .gallery figure {
+  justify-self: center;
+  }
+
+  .towndata {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-gap: 15px; 
+  }
+  
+}
