@@ -10,7 +10,7 @@
   
   figure img:hover {box-shadow: 0 0 50px #333;}
 
-  .towndata {
+  #towndata {
     margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -233,7 +233,7 @@ figure img {
   height: 350px;
 }
 
-.towndata {
+#towndata {
     margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 1fr;
@@ -241,25 +241,25 @@ figure img {
     grid-gap: 15px; 
 }
 
-.prestondata {
+#prestondata {
     background-color: rgb(42, 42, 114);
     color: white; 
     padding: 2rem; 
 }
 
-.sodaspringsdata {
+#sodaspringsdata {
     background-color: rgb(42, 42, 114);
     color: white; 
     padding: 2rem; 
 }
 
-.fishhavendata {
+#fishhavendata {
     background-color: rgb(42, 42, 114);
     color: white; 
     padding: 2rem; 
 }
 
-.prestondata img  {
+#prestondata img  {
     display: block; 
     width: 375px;
     height: 300px; 
@@ -267,7 +267,7 @@ figure img {
     margin-right: auto; 
 }
 
-.sodaspringsdata img  {
+#sodaspringsdata img  {
     display: block; 
     width: 375px;
     height: 300px; 
@@ -275,7 +275,7 @@ figure img {
     margin-right: auto; 
 }
 
-.fishhavendata img  {
+#fishhavendata img  {
     display: block; 
     width: 375px;
     height: 300px; 
