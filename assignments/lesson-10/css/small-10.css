@@ -287,3 +287,15 @@ h5, h6 {
     display: flex; 
     justify-content: center; 
 }
+
+.townevents {
+    box-sizing: content-box;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: center;
+    color: black;
+    align-content: center;
+    background-color: rgb(247, 215, 155);
+    max-width: 800px; 
+    border: solid #FFA400 1px;
+}
