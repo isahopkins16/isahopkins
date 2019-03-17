@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>How About This Weather? | Preston, ID</title>
+  <meta name="description" content="Weather conditions and news for the town of Preston, Idaho.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small-10.css">
+  <link rel="stylesheet" href="css/medium-10.css">
+  <link rel="stylesheet" href="css/wide-10.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SegoeUI">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Georgia">
+
+</head>
+
+<body>
+
+  <header>
+      <img src="images/sunshine.jpg" alt="Sunshine Clipart">
+      <div>
+        <h1>How About This Weather?</h1>
+        <div class="motto">Everything you need to know.</div>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="home.html" title="Home">Home</a></li>
+        <li><a href="preston-10.html" title="Preston">Preston</a></li>
+        <li><a href="#" title="Soda Springs">Soda Springs</a></li>
+        <li><a href="#" title="Fish Haven">Fish Haven</a></li>
+        <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+        <li id="current-page"><a href="gallery-10.html" title="Gallery">Gallery</a></li>
+      </ul>
+    </nav>
+
+  <main>
+
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+      <figure>
+        <img src="images/mountainlake.jpg" alt="Mountain Lake at Sunset">
+        <figcaption>Mountain Lake at Sunset by John Doe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/blueskies.jpg" alt="Blue Skies over Idaho">
+        <figcaption>Blue Skies over Idaho by Jane Doe</figcaption>
+      </figure>
+      <figure>
+          <img src="images/purplesunset.jpg" alt="Beautiful Sunset">
+          <figcaption>Purple Sunset by Molly Mormon</figcaption>
+      </figure>
+      <figure>
+        <img src="images/redflowers.jpg" alt="Red Flowers on the Mountain">
+        <figcaption>Red Mountain Flowers by Peter Priesthood</figcaption>
+      </figure>
+      <figure>
+        <img src="images/snowy.jpg" alt="Snowy Mountain">
+        <figcaption>Snowy Mountain by Brock O. Lee</figcaption>
+      </figure>   
+      <figure>
+        <img src="images/storm.jpg" alt="Rainstorm Closing In">
+        <figcaption>Coming Rain by Ella Vader</figcaption>
+      </figure>
+    </div>
+
+  </main>
+
+  <footer>
+      <p>&copy; 2019 - How About This Weather - Location: Idaho</p>
+      <span id="currentDate"></span>
+    </footer>
+  
+    <script src="js/hamburger.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/stormseverity.js"></script>
+    <script src="js/towndata.js"></script>
+    <script src="js/weatherapi.js"></script>
+  
+  </body>
+  
+  </html>
