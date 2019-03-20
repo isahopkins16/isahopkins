@@ -1,0 +1,302 @@
+*  { margin: 0; box-sizing: border-box;}
+
+body {
+    font-family: 'Segoe UI', serif;
+    font-size: 24px;
+    line-height: 40px;
+    font-family: sans-serif;
+    color: black;
+    background-color: #EAF6FF;
+}
+
+nav {	
+    margin: 0 auto;	
+    width: 100%; 
+    background-color: #FFA400; 
+    color: white; 
+}
+
+.navigation { 
+    list-style: none; 
+    text-align: center; 
+}
+
+.navigation li:first-child { 
+    display: block;
+}
+
+.navigation li { 
+    display: none;
+}
+  
+.navigation a { 
+    display: block; 
+    color: #fff; 
+    padding: .75rem; 
+    text-align: center;	
+    text-decoration: none;
+}
+  
+.navigation a:hover {	
+    color: #fff; 
+    background-color: rgb(252, 113, 0); 
+    font-weight: 700;	
+}
+
+#current-page { 
+    background-color: rgb(252, 113, 0);
+}
+
+.responsive li { 
+    display: block; 
+}
+
+header h1 {
+    font-family: 'Segoe UI', serif;
+    font-size: 4vw;
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.motto {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 2vw;
+    color: white;
+    padding: 10px;
+    font-style: italic;
+}
+
+h2 {
+    font-family: 'Segoe UI', serif;
+    font-size: 2.5.0rem;
+    text-align: center;
+    color: rgb(42, 42, 114);
+    height: 50px;
+    margin-bottom: 25px;  
+}
+
+h3 {
+    text-align: left; 
+}
+
+h4 {
+    font-style: italic;
+}
+
+.herodiv {
+    position: relative;
+    width: 100%;
+    padding: 20px; 
+}
+
+.herodiv img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; 
+}
+
+.weathersummary {
+    position: absolute; 
+    top: 30px;
+    left: 350px;
+    background: rgb(42, 42, 114, .65);
+    opacity: 10; 
+    font-size: 20px;
+    color: white;
+    padding: .5rem;
+    border: 1px solid black;
+}
+
+.fivedayforecast {
+    display: none; 
+}
+
+article {
+    background-color: rgb(247, 215, 155);
+    padding: 1rem;
+    text-align: left !important;
+    border: solid #FFA400 1px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+button {
+    background-color: #FFA400;
+    border: none;
+    color: white; 
+    font-family: 'Segoe UI', sans-serif;
+}
+
+button:hover {
+    color: #fff; 
+    background-color: rgb(252, 113, 0); 
+    font-weight: 700;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    color: #FFF;
+    background-color: rgb(42, 42, 114);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 1rem;
+}
+
+.map {
+    width: 50%;
+    height: auto;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px; 
+    background-color: rgb(247, 215, 155);
+}
+
+input {
+    margin-bottom: 10px;
+}
+  
+label {
+    float: left;
+    clear: none;
+    padding: 2px 1em 0 0;
+}
+  
+.radio {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+}
+  
+.formblock {
+  display: block;
+}
+  
+#rating {
+   display: inline-block;
+}
+  
+#ratingvalue {
+   font-weight: bold;
+   margin-left: 25px;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: 4.0rem;
+    max-width: auto;
+}
+
+header, footer, footer {
+    text-align: center;
+    background-color: #009FFD;
+    color: white;
+}
+
+header img {
+    width: 20vw;
+    height: 20vw;
+    padding-right: 15px;
+}
+
+footer {
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+}
+  
+.gallery figure {
+  justify-self: center;
+}
+  
+figure img {
+  width: 95%;
+  height: 350px;
+}
+
+#towndata {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;  
+    grid-gap: 15px; 
+}
+
+#prestondata {
+    background-color: rgb(42, 42, 114);
+    color: white; 
+    padding: 2rem; 
+}
+
+#sodaspringsdata {
+    background-color: rgb(42, 42, 114);
+    color: white; 
+    padding: 2rem; 
+}
+
+#fishhavendata {
+    background-color: rgb(42, 42, 114);
+    color: white; 
+    padding: 2rem; 
+}
+
+#prestondata img  {
+    display: block; 
+    width: 375px;
+    height: 300px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#sodaspringsdata img  {
+    display: block; 
+    width: 375px;
+    height: 300px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#fishhavendata img  {
+    display: block; 
+    width: 375px;
+    height: 300px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+h5, h6 {
+    display: flex; 
+    justify-content: center; 
+}
+
+.townevents {
+    box-sizing: content-box;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: center;
+    color: black;
+    align-content: center;
+    background-color: rgb(247, 215, 155);
+    max-width: 800px; 
+    border: solid #FFA400 1px;
+}

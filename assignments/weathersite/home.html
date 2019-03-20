@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>How About This Weather? | Preston, ID</title>
+  <meta name="description" content="Weather conditions and news for the town of Preston, Idaho.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/wide.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SegoeUI">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Georgia">
+
+</head>
+
+<body>
+
+  <header>
+      <img src="images/sunshine.jpg" alt="Sunshine Clipart">
+      <div>
+        <h1>How About This Weather?</h1>
+        <div class="motto">Everything you need to know.</div>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li id="current-page"><a href="home.html" title="Home">Home</a></li>
+        <li><a href="preston.html" title="Preston">Preston</a></li>
+        <li><a href="sodasprings.html" title="Soda Springs">Soda Springs</a></li>
+        <li><a href="fishhaven.html" title="Fish Haven">Fish Haven</a></li>
+        <li><a href="stormcenter.html" title="Storm Center">Storm Center</a></li>
+        <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+      </ul>
+    </nav>
+
+  <main>
+    <div id="towndata"> 
+    <div id="prestondata">
+        <img src="images/preston.jpg" alt="City of Preston">
+    </div>
+    <div id="sodaspringsdata">
+        <img src="images/sodasprings.jpg" alt="City of Soda Springs">
+    </div>
+    <div id="fishhavendata">
+        <img src="images/fishhaven.jpg" alt="City of Fish Haven">
+    </div>
+    </div>
+
+    <article> 
+            <img class="articleimg" src="images/welcome.jpg" alt="Welcome to Idaho">
+            <h3>About Us</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis, turpis<br>
+              eu gravida dapibus, ligula purus tristique sem, sit amet hendrerit dui nisl sit<br>
+              amet nibh. Donec non dictum turpis. Donec ac ullamcorper libero, non maximus ligula.<br>
+              Duis id mauris commodo, sagittis nulla vel, imperdiet nunc. Pellentesque ultrices<br>
+              consectetur libero, consectetur posuere nulla semper vel. Maecenas bibendum eros nec<br>
+              felis faucibus, non lobortis turpis imperdiet. Maecenas facilisis ultrices velit<br>
+              efficitur varius.</p>
+     </article>
+
+     <div class="contact">
+            <p>
+              <strong>How About This Weather?</strong><br>
+              555 Climate Street<br>
+              Preston, ID 83263<br>
+            </p>
+            <p>
+              &#9742; 208.888.8888<br>
+              &#9993; contact@weather.com<br>
+            </p>
+          
+          <div class="map">
+            <img src="images/prestonmap.JPG" alt="Map of Preston">
+          </div>
+     
+  </main>
+
+  <footer>
+      <p>&copy; 2019 - How About This Weather - Location: Idaho</p>
+      <span id="currentDate"></span>
+    </footer>
+  
+    <script src="js/hamburger.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/stormseverity.js"></script>
+    <script src="js/towndata.js"></script>
+    <script src="js/weatherapi.js"></script>
+  
+  </body>
+  
+  </html>
