@@ -1,49 +1,41 @@
-var sectionte=document.querySelector('section.townevents');
-var requestURL='https://byui-cit230.github.io/weather/data/towndata.json';
-var request= new XMLHttpRequest();
+var aside = document.querySelector('aside');
+var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var request = new XMLHttpRequest();
 request.open('GET', requestURL);
-request.responseType='json';
+request.responseType = 'json';
 request.send();
-request.onload = function() {
-var townEvents = request.response;
-  showTownEvents(townEvents);
+request.onload = function () {
+    var townEvents = request.response;
+    showEvents(townEvents);
 }
 
-function showEvents(jsonObj){
+function showEvents(jsonObj) {
     var eventsContainer = document.createElement('div');
     eventsContainer.setAttribute('class', 'mycontainer');
     var townevents = document.createElement('div');
-    var title = document.createElement('eventstitle');
+    var title = document.createElement('h2');
     title.textContent = "Local Events";
     townevents.appendChild(title);
-                
-    var townName=jsonObj['towns'];
+
+    var townName = jsonObj['towns'];
+    console.log("data", townName)
+
+    var correctName = document.getElementById("nameTown").textContent;
+    console.log("correct Name:", correctName);
     for (var i = 0; i < townName.length; i++) {
-        var correctName = townName[i].name;
-        if (correctName == "Preston"){ 
-            for (var j = 0; j < townName[i].events.length; j++){
-                var events = document.createElement('p');
-                events.textContent = townName[i].events[j];
+        
+        var eventsTown = townName[i].events;
+        for (var j = 0; j < eventsTown.length; j++) {
+            var events = document.createElement('p');
+            var name = townName[i].name;
+            if (name == correctName) {
+                events.textContent = eventsTown[j];
                 townevents.appendChild(events);
-            } continue; 
+            }
         }
-        else if (correctName == "Soda Springs"){ 
-            for (var j = 0; j < townName[i].events.length; j++){
-                var events = document.createElement('s');
-                events.textContent = townName[i].events[j];
-                townevents.appendChild(events);
-            } continue; 
-        }
-        else if (correctName == "Fish Haven"){ 
-            for (var j = 0; j < townName[i].events.length; j++){
-                var events = document.createElement('f');
-                events.textContent = townName[i].events[j];
-                townevents.appendChild(events);
-            } continue;  
-        } 
-        continue;
+
     }
-    
-    myContainer.appendChild(townevents);
-    sectionte.appendChild(eventsContainer);
+
+    eventsContainer.appendChild(townevents);
+    aside.appendChild(eventsContainer);
 }
