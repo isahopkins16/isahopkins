@@ -19,7 +19,7 @@ var towns = jsonObj["towns"];
         var tName = towns[i].name;
         if (tName === "Preston") {
             var tName = document.createElement('h5');
-            name.textContent = towns[i].name;
+            tName.textContent = towns[i].name;
             var tMotto = document.createElement('h6');
             tMotto.textContent = towns[i].motto;
             var tYear = document.createElement('h6');
@@ -35,7 +35,7 @@ var towns = jsonObj["towns"];
             document.getElementById("prestondata").appendChild(tRain); 
         }
        
-        else if (name === "Soda Springs"){
+        else if (tName === "Soda Springs"){
             var tName = document.createElement('h5');
             tName.textContent = towns[i].name;
             var tMotto = document.createElement('h6');
@@ -53,7 +53,7 @@ var towns = jsonObj["towns"];
             document.getElementById("sodaspringsdata").appendChild(tRain);
         }
         
-        else if (name === "Fish Haven"){
+        else if (tName === "Fish Haven"){
             var tName = document.createElement('h5');
             tName.textContent = towns[i].name;
             var tMotto = document.createElement('h6');
