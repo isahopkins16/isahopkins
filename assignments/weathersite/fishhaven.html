@@ -39,7 +39,8 @@
   
   <main>
 
-    <h2>Fish Haven, Idaho</h2>
+    
+    <h2><span id="nameTown">Fish Haven</span>, Idaho</h2>
     
     <div class="herodiv">
       <img src="images/herofish.jpg" alt="Hero Image for Fish Haven">
@@ -72,32 +73,46 @@
     </div>
    
     <div class="fivedayforecast">
-      <img src="images/forecast.jpg" alt="Forecast">
+      <h2>5 Day Forecast</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th id="day1"></th>
+            <th id="day2"></th>
+            <th id="day3"></th>
+            <th id="day4"></th>
+            <th id="day5"></th>
+          </tr>
+          <tr>
+            <td id="high1"> &deg;F</td>
+            <td id="high2"> &deg;F</td>
+            <td id="high3"> &deg;F</td>
+            <td id="high4"> &deg;F</td>
+            <td id="high5"> &deg;F</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     
-    <section class="townevents">
-    <div class="eventscontainer">
-      <div>
-        <h2>Local Events</h2>
-      </div>
-    </div>
-    </section>
+    <aside class="townevents">
 
-    <article> 
-      <img class="articleimg" src="images/snowshovel.jpg" alt="Girl Shoveling Snow">
-      <h3>Snow Shoveling</h3>
-      <h4>By Brian Slaugh</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis, turpis<br>
-        eu gravida dapibus, ligula purus tristique sem, sit amet hendrerit dui nisl sit<br>
-        amet nibh. Donec non dictum turpis. Donec ac ullamcorper libero, non maximus ligula.<br>
-        Duis id mauris commodo, sagittis nulla vel, imperdiet nunc. Pellentesque ultrices<br>
-        consectetur libero, consectetur posuere nulla semper vel. Maecenas bibendum eros nec<br>
-        felis faucibus, non lobortis turpis imperdiet. Maecenas facilisis ultrices velit<br>
-        efficitur varius.</p>
+    </aside>
+
+    <article>
+        <img class="articleimg" src="images/goatkiller.jpg" alt="Mountain Lion">
+        <h3>Mountain Lion Suspected in Death of Goats</h3>
+        <h4>By Heather Kennison</h4>
+        <p>Idaho Fish and Game officers suspect a mountain lion may have killed two goats on the west end of Buhl this week.
+        The officers investigated the deaths on Tuesday after citizens initially reached out to the Buhl Police Department, 
+        Regional Conservation Officer Josh Royse said. The goats had wounds consistent with a mountain lion attack, he said, 
+        but officers had no definitive confirmation such as tracks or sightings. There have also not been any recent sightings reported in the area, 
+        though mountain lions are not uncommon, Royse said. The animals tend to follow mule deer, which seek lower forage in the foothills 
+        and near the canyon in the winter, he said. “We have no reason to believe there is any threat to public safety,” Royse said.</p>
         <p>
-        <button onclick="window.location.href='https://www.idahostatejournal.com/calendar/#/details/Family-Fun-Night-/6032124/2019-03-04T18';">
-        Continue Reading Article</button>
-        </p> 
+          <button>
+            <a href="https://www.idahostatejournal.com/news/local/mountain-lion-suspected-in-death-of-goats/article_8bcf1358-8613-50cb-9cfc-be0e14d88464.html">
+            Continue Reading Article</a></button>
+        </p>
       </article>
 
     <div class="contact">
@@ -127,11 +142,12 @@
   </footer>
 
   <script src="js/hamburger.js"></script>
-  <script src="js/windchill.js"></script>
   <script src="js/currentdate.js"></script>
   <script src="js/stormseverity.js"></script>
   <script src="js/towndata.js"></script>
-  <script src="js/weatherapi.js"></script>
+  <script src="js/fishhavenapi.js"></script>
+  <script src="js/townevents.js"></script>
+  <script src="js/forecastfish.js"></script>
 
 </body>
 

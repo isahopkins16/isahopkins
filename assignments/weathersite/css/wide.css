@@ -30,8 +30,9 @@
 
 table {
   background-color: white;
-  margin: 1.5rem;
+  margin: auto;
   border: #FFA400;
+  max-width: 600px;
 }
 
 th {
@@ -42,9 +43,17 @@ th {
 
 td {
   padding: .2rem;
+  text-align: center; 
+
 }
 
-
-
+form {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px; 
+    background-color: rgb(247, 215, 155);
+    max-width: 750px;
+}
 
 }
