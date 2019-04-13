@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>The Temple Inn & Suites | St. George, UT</title>
+  <meta name="description" content="Information and reservations for Temple Inn guests.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/wide.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+  <header>
+      <div>
+        <h1>The Temple Inn & Suites</h1>
+        <div class="motto">Serve with us. Stay with us.</div>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="home.html" title="Home">Home</a></li>
+        <li id="current-page"><a href="temples.html" title="Temples">Temples</a></li>
+        <li><a href="reservations.html" title="Reservations">Reservations</a></li>
+        <li><a href="services.html" title="Services">Services</a></li>
+        <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+      </ul>
+    </nav>
+
+  <main>
+
+      <div id="templeData"> 
+          <div id="stGeorgeData">
+              <img src="images/stgeorge.jpg" alt="Image of the St. George Temple">
+              <div><strong>St. George, Utah Temple</strong></div>
+              <ul class="stGeorgeInfo">
+                  <li><strong>Address:</strong> 250 E 400 S, St. George, UT 84770</li>
+                  <li><strong>Phone Number:</strong> 435-673-3533</li>
+                  <li><strong>Services:</strong> Clothing rental and cafeteria available; distribution center nearby.</li>
+                  <li><strong>Ordinance Schedule:</strong> Every 40 minutes from 7:20 am to 8:00 pm. Please call to schedule living ordinances.</li>
+                  <li><strong>Upcoming Closure:</strong> Monday, 27 May 2019</li>
+                  <li><strong><span>Today's Weather: </span><span id="temp"> &deg;F</span></strong></li>
+                  <li><strong>History:</strong> The St. George Temple was the third temple constructed by the Church, and the first temple<br>
+                  constructed in Utah, soon after the saints migrated from Nauvoo, Illinois. Not surprisingly, it looks very similar to the Nauvoo
+                  temple. It was dedicated in 1877.</li>
+                </ul>
+          </div>
+          
+          <div id="nauvooData">
+              <img src="images/nauvoo.jpg" alt="Image of the Nauvoo Temple">
+              <div><strong>Nauvoo, Illinois Temple</strong></div>
+              <ul class="nauvooInfo">
+                  <li><strong>Address:</strong> 50 N Wells St, Nauvoo, IL 62354</li>
+                  <li><strong>Phone Number:</strong> 217-453-6252</li>
+                  <li><strong>Services:</strong> Clothing rental available.</li>
+                  <li><strong>Ordinance Schedule:</strong> Every hour from 8:00 am to 6:00 pm. Please call to schedule living ordinances.</li>
+                  <li><strong>Upcoming Closure:</strong> Monday, 29 April-Sunday, 12 May 2019</li>
+                  <li><strong><span>Today's Weather: </span><span id="temp"> &deg;F</span></strong></li>
+                  <li><strong>History:</strong> The Nauvoo Temple was the second temple constructed by the Church, being dedicated in 1846.<br>
+                  When members were uprooted from Nauvoo soon after that, the Church sold the temple building, only for it to be
+                  destroyed by a fire and tornado. The temple was rebuilt on the original plot of land in 2002.</li>
+                </ul>
+          </div>
+          
+          <div id="manhattanData">
+              <img src="images/manhattan.jpg" alt="Image of the Manhattan Temple">
+              <div><strong>Manhattan New York Temple</strong></div>
+              <ul class="manhattanInfo">
+                  <li><strong>Address:</strong> 125 Columbus Ave, Fourth Floor, New York, New York 10023-6514</li>
+                  <li><strong>Phone Number:</strong> 917-441-8220</li>
+                  <li><strong>Services:</strong> Clothing rental available.</li>
+                  <li><strong>Ordinance Schedule:</strong> Every hour from 8:00 am to 6:00 pm. Please call to schedule living ordinances.</li>
+                  <li><strong>Upcoming Closure:</strong> Thursday, 4 July 2019</li>
+                  <li><strong><span>Today's Weather: </span><span id="temp"> &deg;F</span></strong></li>
+                  <li><strong>History:</strong> The Manhattan New York Temple is the 119th operating temple of the Church, and it is one of
+                  the few that was converted from an existing building. It was dedicated in 2004.</li>
+                </ul>
+          </div>
+
+          <div id="sanDiegoData">
+              <img src="images/sandiego.jpg" alt="Image of the San Diego Temple">
+              <div><strong>San Diego, California Temple</strong></div>
+              <ul class="sanDiegoInfo">
+                  <li><strong>Address:</strong> 7474 Charmant Dr, San Diego, California 92122-5000</li>
+                  <li><strong>Phone Number:</strong> 858-622-0991</li>
+                  <li><strong>Services:</strong> Clothing rental and cafeteria available; distribution center nearby.</li>
+                  <li><strong>Ordinance Schedule:</strong> Every hour from 8:00 am to 8:00 pm. Please call to schedule living ordinances.</li>
+                  <li><strong>Upcoming Closure:</strong> Thursday, 4 July 2019</li>
+                  <li><strong><span>Today's Weather: </span><span id="temp"> &deg;F</span></strong></li>
+                  <li><strong>History:</strong> The San Diego Temple was dedicated in 1993 and is the 45th operating temple of
+                  the Church. Although there is no visitor center, the Mormon Battilion Historic Site is nearby.</li>
+                </ul>
+          </div>
+      </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2019 - Temple Inn & Suites - Location: Utah</p>
+    <span id="currentDate"></span>
+  </footer>
+
+  <script src="js/templeinfo.js"></script>
+  <script src="js/currentdate.js"></script>
+  <script src="js/sandiego.js"></script>
+  <script src="js/manhattan.js"></script>
+  <script src="js/nauvoo.js"></script>
+  <script src="js/stgeorge.js"></script>
+  
+
+</body>
+
+</html>

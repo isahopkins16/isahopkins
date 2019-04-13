@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>The Temple Inn & Suites | St. George, UT</title>
+  <meta name="description" content="Information and reservations for Temple Inn guests.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/wide.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+  <header>
+      <div>
+        <h1>The Temple Inn & Suites</h1>
+        <div class="motto">Serve with us. Stay with us.</div>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="home.html" title="Home">Home</a></li>
+        <li><a href="temples.html" title="Temples">Temples</a></li>
+        <li><a href="reservations.html" title="Reservations">Reservations</a></li>
+        <li><a href="services.html" title="Services">Services</a></li>
+        <li id="current-page"><a href="contact.html" title="Contact Us">Contact Us</a></li>
+      </ul>
+    </nav>
+  
+  <main>
+
+      <form action="thanksagain.html">
+          <h2>Have a question or concern?<br>Interested in long-term stay?<br>Give us a call at (801) 333-5555<br>or send us a message below.</h2><br><br><br>
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name" minlength="5" size="20"><br>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="johndoe95@website.com" size="20"><br>
+              <div class="comments">
+                  <label for="addcomments">Message:</label>
+                  <textarea name="message"></textarea>
+              </div><br>
+          <input type="submit" value="Submit">
+        </form>
+
+      <article class="hqMap">
+        <h2>Company Headquarters</h2>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d690.7565203748535!2d-77.09592872605926!3d38.98354994919078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1555114575853!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </article>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2019 - Temple Inn & Suites - Location: Utah</p>
+    <span id="currentDate"></span>
+  </footer>
+
+  <script src="js/templeinfo.js"></script>
+  <script src="js/currentdate.js"></script>
+
+</body>
+
+</html>

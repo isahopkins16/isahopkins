@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>The Temple Inn & Suites | St. George, UT</title>
+  <meta name="description" content="Information and reservations for Temple Inn guests.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/wide.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+  <header>
+      <div>
+        <h1>The Temple Inn & Suites</h1>
+        <div class="motto">Serve with us. Stay with us.</div>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="home.html" title="Home">Home</a></li>
+        <li><a href="temples.html" title="Temples">Temples</a></li>
+        <li id="current-page"><a href="reservations.html" title="Reservations">Reservations</a></li>
+        <li><a href="services.html" title="Services">Services</a></li>
+        <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+      </ul>
+    </nav>
+
+  <main>
+      <form action="thanks.html">
+          <h2>We can't wait to see you! Please fill out the information below.</h2>
+          <h4>Contact Information</h4>
+          <label for="name">Full Name:</label>
+          <input id="name" type="text" name="name" minlength="5" size="20" required=""><br>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="johndoe95@website.com" size="20" required=""><br>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="tel" required="" minlength="10" size="20"><br>
+          <label for="home">Home State/Country:</label>
+          <input id="home" type="text" name="home" minlength="2" size="20"><br><br>
+          <h4>Reservation - Rooms: $100/night | Suites: $150/night</h4>
+          <label for="arrival">Arrival Date:</label>
+          <input type="arrival" id="arrival" name="arrival" minlength="5" size="20" required=""><br>
+          <label for="departure">Date of Departure:</label>
+          <input type="departure" id="departure" name="departure" minlength="5" size="20" required=""><br>
+          <label for="roomType">Room or Suite?</label>
+          <select id="roomType">
+              <option selected="" disabled="">Please Select...</option>
+              <option value="room">Room</option>
+              <option value="suite">Suite</option>
+          </select><br>
+          <label for="roomAmount">How many?</label>
+          <select id="roomAmount">
+              <option selected="" disabled="">Please Select...</option>
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5</option>
+          </select><br><br>
+              <div class="comments">
+                  <label for="addcomments">Additional Comments:</label>
+                  <textarea name="message"></textarea>
+              </div><br>
+          <label for="cardNumber">Credit Card Number:</label>
+          <input type="cardNumber" id="cardNumber" name="cardNumber" required="" minlength="16" size="20"><br>
+          <label for="cvvNumber">CVV Number:</label>
+          <input type="cvvNumber" id="cvvNumber" name="cvvNumber" required="" minlength="3" size="20"><br>
+          <label for="address">Billing Address:</label>
+          <input type="address" id="address" name="address"  size="20"><br><br>
+          <input type="submit" value="Continue">
+        </form>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2019 - Temple Inn & Suites - Location: Utah</p>
+    <span id="currentDate"></span>
+  </footer>
+
+  <script src="js/templeinfo.js"></script>
+  <script src="js/currentdate.js"></script>
+
+</body>
+
+</html>
